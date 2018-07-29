@@ -3,7 +3,14 @@
 } */
 
 body {
-    background-image: url(images/alexander-krivitskiy-575481-unsplash.jpg);
-    min-height: 100vh;
+    background-image: url(images/willian-justen-de-vasconcellos-421875-unsplash.jpg);
+  
+    /* Full height */
+    height: 100vh;
+
+    /* Center and scale the image nicely */
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+}
 }
