@@ -1,3 +1,7 @@
-.card {
+/* .card {
     max-width: 33%;
+} */
+
+html {
+    background-color: #363636 !important;
 }
