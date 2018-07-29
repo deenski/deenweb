@@ -2,6 +2,8 @@
     max-width: 33%;
 } */
 
-html {
-    background-color: #363636 !important;
+body {
+    background-image: url(images/alexander-krivitskiy-575481-unsplash.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
 }
