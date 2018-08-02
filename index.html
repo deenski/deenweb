@@ -213,27 +213,27 @@
                             switch (today.getDay()) {
                                 case 1:
                                     if (r%2 == 0) {
-                                        return "Maili works until 4pm";
+                                        return "Monday: Even Week: Maili works until 4pm";
                                     } else {
-                                        return "Maili has the day off";
+                                        return "Monday: Odd Week: Maili has the day off";
                                     } break;
                                 case 2:
-                                    return "Maili works until 4pm";
+                                    return "Tuesday: Maili works until 4pm";
                                     break;
                                 case 3:
-                                    return "Maili works until 6pm";
+                                    return "Wednesday: Maili works until 6pm";
                                     break;
                                 case 4: 
-                                    return "Maili works until 3pm";
+                                    return "Thursday: Maili works until 3pm";
                                     break;
                                 case 5:
-                                    if (r%2 == 0) {
-                                        return "Maili has the day off";
+                                    if (r%2 == 1) {
+                                        return "Friday: Odd Week: Maili has the day off";
                                     } else {
-                                        return "Maili works until noon";
+                                        return "Friday: Even Week: Maili works until noon";
                                     } break;
                                 case 6, 7: 
-                                    return "It's the weekend! Maili don't werk weekendz!";
+                                    return "It's the weekend! Maili don't werk on weekendz!";
                                     break;
 
                             }
