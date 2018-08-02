@@ -1,6 +1,7 @@
-/* .card {
-    max-width: 33%;
-} */
+::selection {
+    background-color: yellow;
+    color: black;
+}
 
 body {
     background-image: url(images/willian-justen-de-vasconcellos-421875-unsplash.jpg);
