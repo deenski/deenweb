@@ -189,58 +189,7 @@
                             </footer>
                         </div>
                     </div>
-                    <script>
-                        
-
-                        function getWeekNumber(d) {
-                            // Copy date so don't modify original
-                            d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
-                            // Set to nearest Thursday: current date + 4 - current day number
-                            // Make Sunday's day number 7
-                            d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay()||7));
-                            // Get first day of year
-                            var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
-                            // Calculate full weeks to nearest Thursday
-                            var weekNo = Math.ceil(( ( (d - yearStart) / 86400000) + 1)/7);
-                            // Return array of year and week number
-                            return [d.getUTCFullYear(), weekNo];
-                        }
-
-
-                        function mailiworking(r) {
-                            let today = new Date();
-
-                            switch (today.getDay()) {
-                                case 1:
-                                    if (r%2 == 0) {
-                                        return "Monday: Even Week: Maili works until 4pm";
-                                    } else {
-                                        return "Monday: Odd Week: Maili has the day off";
-                                    } break;
-                                case 2:
-                                    return "Tuesday: Maili works until 4pm";
-                                    break;
-                                case 3:
-                                    return "Wednesday: Maili works until 6pm";
-                                    break;
-                                case 4: 
-                                    return "Thursday: Maili works until 3pm";
-                                    break;
-                                case 5:
-                                    if (r%2 == 1) {
-                                        return "Friday: Odd Week: Maili has the day off";
-                                    } else {
-                                        return "Friday: Even Week: Maili works until noon";
-                                    } break;
-                                case 6, 7: 
-                                    return "It's the weekend! Maili don't werk on weekendz!";
-                                    break;
-
-                            }
-                        }
-                        let result = getWeekNumber(new Date());
-                        document.getElementById("atwork").innerHTML = mailiworking(result[1]);
-                    </script>
+                    <script src="getSchedule.js"></script>
 
                 </div> <!-- end container-->
             </div>
