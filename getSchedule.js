@@ -49,7 +49,7 @@ function mailiworking(weeknumber) {
         case 6: 
             return "It's Saturday! Maili don't werk on weekendz!";
             break;
-        case 7:
+        case 0:
             return "It's Sunday! Aint nobody got time to work on no Sunday!"
 
     }
