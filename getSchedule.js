@@ -29,7 +29,7 @@ function mailiworking(weeknumber) {
             if (weeknumber%2 == 1) {
                 return "Monday: Odd Week: Maili works until 4pm";
             } else {
-                return "Monday: Evem Week: Maili has the day off";
+                return "Monday: Even Week: Maili has the day off";
             } break;
         case 2:
             return "Tuesday: Maili works until 4pm";
