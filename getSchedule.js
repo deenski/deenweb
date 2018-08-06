@@ -26,10 +26,10 @@ function mailiworking(weeknumber) {
     // console.log(today.getDay());
     switch (today.getDay()) {
         case 1:
-            if (weeknumber%2 == 0) {
-                return "Monday: Even Week: Maili works until 4pm";
+            if (weeknumber%2 == 1) {
+                return "Monday: Odd Week: Maili works until 4pm";
             } else {
-                return "Monday: Odd Week: Maili has the day off";
+                return "Monday: Evem Week: Maili has the day off";
             } break;
         case 2:
             return "Tuesday: Maili works until 4pm";
@@ -41,10 +41,10 @@ function mailiworking(weeknumber) {
             return "Thursday: Maili works until 3pm";
             break;
         case 5:
-            if (weeknumber%2 == 1) {
-                return "Friday: Odd Week: Maili has the day off";
+            if (weeknumber%2 == 0) {
+                return "Friday: Even Week: Maili has the day off";
             } else {
-                return "Friday: Even Week: Maili works until noon";
+                return "Friday: Odd Week: Maili works until noon";
             } break;
         case 6: 
             return "It's Saturday! Maili don't werk on weekendz!";
