@@ -27,9 +27,9 @@ function mailiworking(weeknumber) {
     switch (today.getDay()) {
         case 1:
             if (weeknumber%2 == 1) {
-                return "Monday: Odd Week: Maili works until 4pm";
+                return "Monday: Odd Week: Maili has the day off";
             } else {
-                return "Monday: Even Week: Maili has the day off";
+                return "Monday: Even Week: Maili works until 4pm";
             } break;
         case 2:
             return "Tuesday: Maili works until 4pm";
